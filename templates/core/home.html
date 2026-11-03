@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Explore my Python, Django, Django REST Framework, MySQL, React and full-stack development projects."
+    />
+
+    <meta name="theme-color" content="#080d18" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#home" class="logo">Portfolio<span>.</span></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="intro">HELLO, I'M</p>
+
+        <h1>
+          Python Full Stack
+          <span>Developer</span>
+        </h1>
+
+        <h2>Software Engineer Fresher</h2>
+
+        <p class="hero-description">
+          I build responsive web applications using Python, Django, MySQL,
+          JavaScript and React. I enjoy learning new technologies and creating
+          useful web experiences.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Projects</a>
+
+          <a
+            href="{% static 'files/resume.pdf' %}"
+            class="btn btn-outline"
+            download
+          >
+            Download Resume
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://github.com/lotusoflight"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/gopika-m-a9b7262a5/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <p class="intro">GET TO KNOW ME</p>
+      <h2>About <span>Me</span></h2>
+
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="{% static 'images/gopika.jpg' %}"
+            alt="Developer profile photo"
+          />
+        </div>
+
+        <div class="about-content">
+          <h3>Python Full Stack Developer</h3>
+
+          <p>
+            I am a Computer Science and Engineering graduate interested in
+            building modern and responsive web applications. I have learned
+            Python, Django, Django REST Framework, MySQL, HTML, CSS, JavaScript
+            and React.
+          </p>
+
+          <p>
+            I am currently improving my development skills by building practical
+            projects and learning how to develop complete web applications from
+            frontend to backend.I have developed practical projects, including
+            an Event Management System, EduKits educational store, and a
+            Spotify-inspired music application.
+          </p>
+
+          <div class="about-details">
+            <p>
+              <strong>Qualification:</strong> B.E. Computer Science and
+              Engineering
+            </p>
+            <p>
+              <strong>Specialization:</strong> Python Full Stack Development
+            </p>
+            <p>
+              <strong>Backend:</strong> Python, Django, Django REST Framework
+            </p>
+            <p>
+              <strong>Frontend:</strong> HTML, CSS, Bootstrap, JavaScript,
+              React.js
+            </p>
+            <p><strong>Database:</strong> MySQL, SQLite</p>
+            <p><strong>Career Goal:</strong> Software Developer</p>
+          </div>
+
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <p class="intro">MY ACADEMIC JOURNEY</p>
+      <h2>Education <span>Details</span></h2>
+
+      <div class="education-list">
+        <!-- College -->
+        <div class="education-card">
+          <p class="education-year">2022 – 2026</p>
+          <h3>B.E. Computer Science and Engineering</h3>
+          <p><strong>College:</strong> Latha Mathavan College of Engineering</p>
+          <p><strong>University:</strong> Anna University</p>
+        </div>
+
+        <!-- HSC -->
+        <div class="education-card">
+          <p class="education-year">2020 – 2022</p>
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p>
+            <strong>School:</strong> Government Girls Higher Secondary School
+          </p>
+          <p><strong>Location:</strong> Karungalakudi</p>
+          <p><strong>Percentage:</strong> 53%</p>
+        </div>
+
+        <!-- SSLC -->
+        <div class="education-card">
+          <p class="education-year">2019 – 2020</p>
+          <h3>Secondary School Leaving Certificate (SSLC)</h3>
+          <p>
+            <strong>School:</strong> Government Girls Higher Secondary School
+          </p>
+          <p><strong>Location:</strong> Karungalakudi</p>
+          <p><strong>Percentage:</strong> 55.4%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="intro">WHAT I WORK WITH</p>
+      <h2>My Technical <span>Skills</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>Python</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>Django</span>
+            <span>95%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>Django REST Framework</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 70%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>MySQL</span>
+            <span>75%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 75%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>HTML &amp; CSS</span>
+            <span>95%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>JavaScript</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 70%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>React.js</span>
+            <span>95%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 65%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-info">
+            <span>Git &amp; GitHub</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--skill-width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <p class="intro">PORTFOLIO</p>
+
+        <h2>Featured <span>Projects</span></h2>
+
+        <p class="section-description">
+          A selection of projects showcasing my skills in Python, Django,
+          frontend development and database management.
+        </p>
+      </div>
+
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+            alt="E-Commerce website preview"
+            loading="lazy"
+          />
+
+          <div class="project-info">
+            <p class="project-category">WEB DEVELOPMENT</p>
+            <h3>E-Commerce Website</h3>
+
+            <p>
+              A responsive shopping website with product listings, a modern
+              interface and an easy browsing experience. Designed for smooth and
+              convenient online shopping.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://cheerful-mermaid-dd8ed1.netlify.app/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+
+        <article class="project-card">
+          <img
+            src="{% static 'images/MRPshop.jpg' %}"
+            alt="MRP Shop Online Store Preview"
+            loading="lazy"
+          />
+
+          <div class="project-info">
+            <p class="project-category">FREND END DEVELOPMENT</p>
+            <h3>MRP Shop – Online Store</h3>
+
+            <p>
+              A responsive e-commerce website featuring product browsing, user
+              authentication, wishlist, shopping cart, and a modern online
+              shopping experience.
+            </p>
+
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>HTML</span>
+              <span>Tailwind CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://gopika-fullstack-project.netlify.app/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600"
+            alt="Portfolio Website preview"
+            loading="lazy"
+          />
+
+          <div class="project-info">
+            <p class="project-category">WEB DEVELOPMENT PROJECT</p>
+            <h3>Portfolio Website</h3>
+
+            <p>
+              A responsive portfolio website showcasing my projects and skills.
+              Built with modern web technologies for an optimal user experience.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>REACT</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://chic-squirrel-98ee1d.netlify.app/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600"
+            alt="EduKits STEM Science Learning Kits"
+            loading="lazy"
+          />
+
+          <div class="project-info">
+            <p class="project-category">FULL STACK DEVELOPMENT</p>
+            <h3>EXPLORE EDUKITS</h3>
+
+            <p>
+              A STEM educational kits e-commerce website built with Django.
+              Features product listings, categories, and a user-friendly
+              shopping interface to make educational kits easy to explore.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Django</span>
+              <span>SQLite</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://edukits-project.onrender.com/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600"
+            alt="Eventora Event Management System"
+            loading="lazy"
+          />
+
+          <div class="project-info">
+            <p class="project-category">FULL STACK WEB DEVELOPMENT</p>
+            <h3>EVENTORA – Event Management System</h3>
+
+            <p>
+              A responsive event management website built with Python and
+              Django. Users can explore events, view event details, check ticket
+              prices and available seats, book tickets, manage their bookings,
+              and cancel their own bookings. Designed with a modern interface
+              for a smooth user experience.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Django</span>
+              <span>SQLite</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://royalty-events.onrender.com"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+
+        <article class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=600"
+            alt="Spotify Music Streaming Clone"
+            loading="lazy"
+          />
+
+          <div class="project-info">
+            <p class="project-category">FULL STACK DEVELOPMENT</p>
+            <h3>SPOTIFY MUSIC CLONE</h3>
+
+            <p>
+              A modern music streaming web application inspired by Spotify,
+              built using React.js and Django REST Framework. Features include
+              user registration and login with JWT authentication, song search,
+              genre browsing, playlists, favorites, and music playback using
+              Spotify Embed integration. Designed with a responsive interface
+              for an engaging music experience.
+            </p>
+
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>Python</span>
+              <span>Django REST Framework</span>
+              <span>MySQL</span>
+              <span>JWT</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>Spotify Embed</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href=" https://spotify-clone-frontend-sable.vercel.app/"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+              <a
+                href="https://spotify-clone-backend-98do.onrender.com"
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project ↗
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="intro">LET'S CONNECT</p>
+      <h2>Contact <span>Me</span></h2>
+
+      <p>
+        I am a fresher Python Full Stack Developer looking for an opportunity to
+        start my career. I would be happy to connect with companies and attend
+        interviews to showcase my skills.
+      </p>
+
+      {% if messages %}
+      <div class="message-list" aria-live="polite">
+        {% for message in messages %}
+        <div class="alert {{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <form
+        method="POST"
+        action="{% url 'home' %}#contact"
+        class="contact-form"
+      >
+        {% csrf_token %}
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="100"
+            value="{{ form_data.name|default:'' }}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="254"
+            value="{{ form_data.email|default:'' }}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            maxlength="150"
+            value="{{ form_data.subject|default:'' }}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required>
+{{ form_data.message|default:'' }}</textarea
+          >
+        </div>
+
+        <button type="submit" class="btn submit-btn">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h3>Python <span>Developer</span></h3>
+
+        <p>
+          Building web applications and learning new technologies every day.
+        </p>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a
+            href="https://github.com/lotusoflight"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          >
+
+          <a
+            href="https://linkedin.com/in/gopika-m-a9b7262a"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          >
+
+          <a href="mailto:gopikam0405@gmail.com">Email ↗</a>
+        </div>
+
+        <p class="copyright">
+          © 2026 Python Full Stack Developer. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
