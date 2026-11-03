@@ -1,0 +1,4 @@
+Django==5.2.18
+PyMySQL==1.2.3
+gunicorn
+whitenoise
